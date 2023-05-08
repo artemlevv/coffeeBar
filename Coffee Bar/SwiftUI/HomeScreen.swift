@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var saleArray = SaleObject()
+    @State var showCardDetails = false
     var name = "Artem"
     var body: some View {
         VStack{
@@ -22,6 +23,11 @@ struct HomeScreen: View {
                 .cornerRadius(15)
                 .padding(.leading, 10)
                 .padding(.trailing, 10)
+                .simultaneousGesture(TapGesture().onEnded{ showCardDetails.toggle()})
+                .sheet(isPresented: $showCardDetails){
+                    CardViewDetails()
+                        .presentationDetents([.fraction(0.95)])
+                }
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(spacing: 20){
                     ForEach(saleArray.sales, id: \.title){ s in

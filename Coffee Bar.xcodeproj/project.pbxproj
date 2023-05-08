@@ -10,6 +10,9 @@
 		AC19AFE32A08495D007B3809 /* SaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFE22A08495D007B3809 /* SaleView.swift */; };
 		AC19AFE72A085057007B3809 /* SaleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFE62A085057007B3809 /* SaleObject.swift */; };
 		AC19AFE92A086BF9007B3809 /* SaleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFE82A086BF9007B3809 /* SaleDetails.swift */; };
+		AC19AFEB2A08B4DA007B3809 /* BarLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFEA2A08B4DA007B3809 /* BarLocation.swift */; };
+		AC19AFED2A08B8B9007B3809 /* BarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFEC2A08B8B9007B3809 /* BarList.swift */; };
+		AC19AFEF2A08B8FA007B3809 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFEE2A08B8FA007B3809 /* BarView.swift */; };
 		AC692C662A0809B400B1C3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C652A0809B400B1C3DF /* AppDelegate.swift */; };
 		AC692C682A0809B400B1C3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C672A0809B400B1C3DF /* SceneDelegate.swift */; };
 		AC692C6A2A0809B400B1C3DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C692A0809B400B1C3DF /* ViewController.swift */; };
@@ -20,12 +23,18 @@
 		AC692C7C2A081B9A00B1C3DF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C7B2A081B9900B1C3DF /* LogInViewController.swift */; };
 		AC692C7E2A0827B900B1C3DF /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C7D2A0827B900B1C3DF /* HomeScreen.swift */; };
 		AC692C802A08329200B1C3DF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C7F2A08329200B1C3DF /* CardView.swift */; };
+		ACB3B2C32A08D72E009514D3 /* BarLocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3B2C22A08D72E009514D3 /* BarLocationDetails.swift */; };
+		ACB3B2C52A09017E009514D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3B2C42A09017E009514D3 /* ContentView.swift */; };
+		ACB3B2C72A090477009514D3 /* CardViewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3B2C62A090477009514D3 /* CardViewDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC19AFE22A08495D007B3809 /* SaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleView.swift; sourceTree = "<group>"; };
 		AC19AFE62A085057007B3809 /* SaleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleObject.swift; sourceTree = "<group>"; };
 		AC19AFE82A086BF9007B3809 /* SaleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDetails.swift; sourceTree = "<group>"; };
+		AC19AFEA2A08B4DA007B3809 /* BarLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarLocation.swift; sourceTree = "<group>"; };
+		AC19AFEC2A08B8B9007B3809 /* BarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarList.swift; sourceTree = "<group>"; };
+		AC19AFEE2A08B8FA007B3809 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		AC692C622A0809B400B1C3DF /* Coffee Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC692C652A0809B400B1C3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC692C672A0809B400B1C3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +47,9 @@
 		AC692C7B2A081B9900B1C3DF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AC692C7D2A0827B900B1C3DF /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		AC692C7F2A08329200B1C3DF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ACB3B2C22A08D72E009514D3 /* BarLocationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarLocationDetails.swift; sourceTree = "<group>"; };
+		ACB3B2C42A09017E009514D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACB3B2C62A090477009514D3 /* CardViewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				AC692C7D2A0827B900B1C3DF /* HomeScreen.swift */,
+				AC19AFEA2A08B4DA007B3809 /* BarLocation.swift */,
+				ACB3B2C22A08D72E009514D3 /* BarLocationDetails.swift */,
+				AC19AFEC2A08B8B9007B3809 /* BarList.swift */,
+				ACB3B2C42A09017E009514D3 /* ContentView.swift */,
+				ACB3B2C62A090477009514D3 /* CardViewDetails.swift */,
+				AC19AFEE2A08B8FA007B3809 /* BarView.swift */,
 				AC19AFE22A08495D007B3809 /* SaleView.swift */,
 				AC19AFE62A085057007B3809 /* SaleObject.swift */,
 				AC692C7F2A08329200B1C3DF /* CardView.swift */,
@@ -168,12 +186,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC692C802A08329200B1C3DF /* CardView.swift in Sources */,
+				AC19AFED2A08B8B9007B3809 /* BarList.swift in Sources */,
 				AC19AFE32A08495D007B3809 /* SaleView.swift in Sources */,
 				AC692C6A2A0809B400B1C3DF /* ViewController.swift in Sources */,
+				AC19AFEB2A08B4DA007B3809 /* BarLocation.swift in Sources */,
+				AC19AFEF2A08B8FA007B3809 /* BarView.swift in Sources */,
 				AC692C662A0809B400B1C3DF /* AppDelegate.swift in Sources */,
+				ACB3B2C32A08D72E009514D3 /* BarLocationDetails.swift in Sources */,
 				AC692C7E2A0827B900B1C3DF /* HomeScreen.swift in Sources */,
 				AC19AFE92A086BF9007B3809 /* SaleDetails.swift in Sources */,
 				AC692C7A2A080D2000B1C3DF /* SignUpViewController.swift in Sources */,
+				ACB3B2C72A090477009514D3 /* CardViewDetails.swift in Sources */,
+				ACB3B2C52A09017E009514D3 /* ContentView.swift in Sources */,
 				AC19AFE72A085057007B3809 /* SaleObject.swift in Sources */,
 				AC692C7C2A081B9A00B1C3DF /* LogInViewController.swift in Sources */,
 				AC692C682A0809B400B1C3DF /* SceneDelegate.swift in Sources */,

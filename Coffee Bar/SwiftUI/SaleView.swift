@@ -44,6 +44,4 @@ struct SaleView_Previews: PreviewProvider {
 }
 extension Color{
     static let saleLabelColor = Color(red: 89/255, green: 0/255, blue: 66/255)
-    
-            
 }
