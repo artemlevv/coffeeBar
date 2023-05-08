@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -13,19 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let button = signUpButton {
-            button.addTarget(self, action: #selector(openSignUpController), for: .touchUpInside)
-        } else {
-            print("Error: signUpButton is nil")
-        }
     }
-    @objc func openSignUpController(){
-        let story = UIStoryboard(name: "Main", bundle: nil)
-        let controller = story.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
-        let navigation = UINavigationController(rootViewController: controller)
-        self.view.addSubview(navigation.view)
-        self.addChild(navigation)
-        navigation.didMove(toParent: self)
+    override func viewDidAppear(_ animated: Bool){
+     super.viewDidAppear(animated)
+     if Auth.auth().currentUser != nil {
+       self.performSegue(withIdentifier: "alreadyLogInSegue", sender: nil)
+    }
     }
 
 

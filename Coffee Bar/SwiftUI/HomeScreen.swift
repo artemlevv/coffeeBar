@@ -6,19 +6,47 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct HomeScreen: View {
     @ObservedObject var saleArray = SaleObject()
     @State var showCardDetails = false
-    var name = "Artem"
+    var name: String = Auth.auth().currentUser?.displayName ?? "Friend"
     var body: some View {
         VStack{
-            Text("Hello, \(name)")
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.custom("Arial Rounded MT Bold", size: 25))
-                .foregroundColor(Color.greetingColor)
-                .padding(.leading, 20)
-                .padding(.top, 25)
+            HStack{
+                Text("Hello, \(name)")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.custom("Arial Rounded MT Bold", size: 25))
+                    .foregroundColor(Color.greetingColor)
+                    .padding(.leading, 20)
+                    .padding(.top, 25)
+                Button(action: {
+                    do {
+                        try Auth.auth().signOut()
+                            }
+                    catch let signOutError as NSError {
+                        print ("Error signing out: %@", signOutError)
+                        }
+                            
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let initial = storyboard.instantiateInitialViewController()
+                    UIApplication.shared.keyWindow?.rootViewController = initial
+                },
+                       label: {
+                    VStack{
+                    Image(systemName: "arrowtriangle.backward.fill")
+                        .foregroundColor(Color.greetingColor)
+                    Text("Logout")
+                            .font(.custom("Arial Rounded MT Bold", size: 12))
+                            .foregroundColor(Color.greetingColor)
+                }
+                    .padding(.top, 25)
+                    .padding(.trailing, 10)
+                    
+                })
+                Spacer()
+            }
            CardView()
                 .cornerRadius(15)
                 .padding(.leading, 10)
