@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC19AFE32A08495D007B3809 /* SaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFE22A08495D007B3809 /* SaleView.swift */; };
+		AC19AFE72A085057007B3809 /* SaleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFE62A085057007B3809 /* SaleObject.swift */; };
+		AC19AFE92A086BF9007B3809 /* SaleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19AFE82A086BF9007B3809 /* SaleDetails.swift */; };
 		AC692C662A0809B400B1C3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C652A0809B400B1C3DF /* AppDelegate.swift */; };
 		AC692C682A0809B400B1C3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C672A0809B400B1C3DF /* SceneDelegate.swift */; };
 		AC692C6A2A0809B400B1C3DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C692A0809B400B1C3DF /* ViewController.swift */; };
@@ -15,9 +18,14 @@
 		AC692C722A0809B700B1C3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC692C702A0809B700B1C3DF /* LaunchScreen.storyboard */; };
 		AC692C7A2A080D2000B1C3DF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C792A080D2000B1C3DF /* SignUpViewController.swift */; };
 		AC692C7C2A081B9A00B1C3DF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C7B2A081B9900B1C3DF /* LogInViewController.swift */; };
+		AC692C7E2A0827B900B1C3DF /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C7D2A0827B900B1C3DF /* HomeScreen.swift */; };
+		AC692C802A08329200B1C3DF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692C7F2A08329200B1C3DF /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC19AFE22A08495D007B3809 /* SaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleView.swift; sourceTree = "<group>"; };
+		AC19AFE62A085057007B3809 /* SaleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleObject.swift; sourceTree = "<group>"; };
+		AC19AFE82A086BF9007B3809 /* SaleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDetails.swift; sourceTree = "<group>"; };
 		AC692C622A0809B400B1C3DF /* Coffee Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC692C652A0809B400B1C3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC692C672A0809B400B1C3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,8 @@
 		AC692C732A0809B700B1C3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC692C792A080D2000B1C3DF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AC692C7B2A081B9900B1C3DF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		AC692C7D2A0827B900B1C3DF /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		AC692C7F2A08329200B1C3DF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 		AC692C642A0809B400B1C3DF /* Coffee Bar */ = {
 			isa = PBXGroup;
 			children = (
+				AC692C812A0832A200B1C3DF /* SwiftUI */,
 				AC692C652A0809B400B1C3DF /* AppDelegate.swift */,
 				AC692C672A0809B400B1C3DF /* SceneDelegate.swift */,
 				AC692C692A0809B400B1C3DF /* ViewController.swift */,
@@ -71,6 +82,18 @@
 				AC692C732A0809B700B1C3DF /* Info.plist */,
 			);
 			path = "Coffee Bar";
+			sourceTree = "<group>";
+		};
+		AC692C812A0832A200B1C3DF /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				AC692C7D2A0827B900B1C3DF /* HomeScreen.swift */,
+				AC19AFE22A08495D007B3809 /* SaleView.swift */,
+				AC19AFE62A085057007B3809 /* SaleObject.swift */,
+				AC692C7F2A08329200B1C3DF /* CardView.swift */,
+				AC19AFE82A086BF9007B3809 /* SaleDetails.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC692C802A08329200B1C3DF /* CardView.swift in Sources */,
+				AC19AFE32A08495D007B3809 /* SaleView.swift in Sources */,
 				AC692C6A2A0809B400B1C3DF /* ViewController.swift in Sources */,
 				AC692C662A0809B400B1C3DF /* AppDelegate.swift in Sources */,
+				AC692C7E2A0827B900B1C3DF /* HomeScreen.swift in Sources */,
+				AC19AFE92A086BF9007B3809 /* SaleDetails.swift in Sources */,
 				AC692C7A2A080D2000B1C3DF /* SignUpViewController.swift in Sources */,
+				AC19AFE72A085057007B3809 /* SaleObject.swift in Sources */,
 				AC692C7C2A081B9A00B1C3DF /* LogInViewController.swift in Sources */,
 				AC692C682A0809B400B1C3DF /* SceneDelegate.swift in Sources */,
 			);
@@ -301,8 +329,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,8 +361,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
